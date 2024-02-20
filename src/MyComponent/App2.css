@@ -1,0 +1,235 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  } */
+  body{
+    background-color:rgb(246, 245, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background: url(bg.jpg) no-repeat; */
+    background-size: cover;
+    background-position: center;
+  }
+  .wrapper{
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(102, 50, 50, 0.2);
+    backdrop-filter: blur(9px);
+    border-radius: 12px;
+    padding: 30px 40px;
+  }
+  .wrapper h1{
+    font-size: 36px;
+    text-align: center;
+  }
+  .wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    
+    margin: 30px 0;
+  }
+  .input-box input{
+    width: 100%;
+    height: 100%;
+
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: black;
+    padding: 20px 45px 20px 20px;
+  }
+  .input-box input::placeholder{
+    color: #e99898;
+  }
+  .input-box i{
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    font-size: 20px;
+    background-color: #e99898;
+  }
+  .wrapper .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+  }
+  .remember-forgot label input{
+    accent-color: #e99898;
+    margin-right: 3px;
+  
+  }
+  .remember-forgot a{
+    color: #e99898;
+    text-decoration: none;
+  
+  }
+  .remember-forgot a:hover{
+    text-decoration: underline;
+  }
+  .wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background: #e99898;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+  }
+  .wrapper .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+  
+  }
+  .register-link p a{
+    color: #e99898;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .register-link p a:hover{
+    text-decoration: underline;
+  }
+  .App {
+    text-align: center;
+  }
+  
+  .App.container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .App .container .h1-heading{
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 65px;
+    /* color: red; */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to right, #0a1273, #68751a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .App .container .login-heading {
+    font-family: 'Arial', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+   .container2 .h1-headings{
+    margin: 20px 0;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 65px;
+    /* color: red; */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to right,blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    /* width: -100%; */
+  }
+  .container2 {
+    text-align: center;
+  }
+  
+
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+} */
+.form-container {
+  width: 200%;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Form title styles */
+.form-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333333;
+  text-align: center;
+}
+
+/* Form input styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #555555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: fixed;
+  padding: 15px;
+  font-size: 16px;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+/* Form button styles */
+.form-btn {
+  display: center;
+  width: fixed;
+  padding: 15px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-btn:hover {
+  background-color: #0056b3;
+}
+
+.centered-heading {
+  text-align:inherit;
+  font-size: 50px;
+  font-weight: bold;
+  color: #333;
+}
+
